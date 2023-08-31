@@ -13,3 +13,10 @@ export const trends = [
     {placeOfTrend: 'Trending in Kazakhstan', title: '#newmusic', quantityPosts: '14,3K posts'},
     {placeOfTrend: 'Trending in Kazakhstan', title: 'China', quantityPosts: '3,117 posts'},
 ]
+export const trendsForYou = [
+    {placeOfTrend: 'Trending in Kazakhstan', title: 'Cats', quantityPosts: '198,2K posts'},
+    {placeOfTrend: 'Trending in Kazakhstan', title: 'Cats Funny', quantityPosts: '2,238 posts'},
+    {placeOfTrend: 'Trending in Kazakhstan', title: 'Dogs', quantityPosts: '29,9K posts'},
+    {placeOfTrend: 'Trending in Kazakhstan', title: 'Cool', quantityPosts: '24,8K posts'},
+    {placeOfTrend: 'Trending in Kazakhstan', title: 'The most', quantityPosts: '99,4K posts'},
+]

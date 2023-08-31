@@ -6,7 +6,9 @@
    margin-top: 100px;
 }
 .registration__title {
-   margin-bottom: 20px;
+   margin-bottom: 30px;
+
+   font-size: 32px;
 }
 .registration__form {
    width: 100%;
@@ -18,11 +20,21 @@
    width: 30%;
    padding: 10px;
    margin: 10px 0;
+
+   border: 1px solid rgb(204, 204, 204);
+   border-radius: 3px;
+   box-shadow: 5px 5px 5px rgb(204, 204, 204);
+   
 }
-.registration__button {
+.registration__input::placeholder{
+   font-weight: 600;
+   font-size: 17px;
+   color: rgb(159, 159, 159);
+}
+.registration__button__active {
    width: 20%;
    padding: 10px;
-   margin-top: 30px;
+   margin-top: 40px;
 
    border-radius: 30px;
    background-color: #1d9bf0;
@@ -35,4 +47,17 @@
 .registration__button:hover {
    background-color: #1c8ad4;
    transition: 0.2s;
+}
+.registration__button__disabled {
+   width: 20%;
+   padding: 10px;
+   margin-top: 40px;
+
+   border-radius: 30px;
+   background-color: #53b5f6;
+   border: none;
+
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
 }

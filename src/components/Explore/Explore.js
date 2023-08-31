@@ -1,22 +1,30 @@
+import { trendsForYou } from "../../dataBase";
+import TrendItem from "../TrendsColumn/TrendItem/TrendItem";
 import styles from "./Explore.module.css";
 
-import { FiSettings, FiSearch } from "react-icons/fi"
+import ExploreHeader from "./ExploreHeader/ExploreHeader";
 
 export default function Explore() {
    return (
       <div className={styles.explore}>
-         <div className={styles.explore__header}>
-            <div className={styles.explore__header__search}>
-               <div className={styles.search__icon}>
-                  <FiSearch />
-               </div>
-               <input
-                  type="text"
-                  className={styles.search__input}
-                  placeholder="Search"
-               />
-            </div>
-            <div className={styles.explore__header__icon}><FiSettings /></div>
+         <ExploreHeader />
+         <img
+            src="img/explore_img.webp"
+            className={styles.explore__image}
+         ></img>
+         <div className={styles.explore__trends__items}>
+            <h2 className={styles.explore__trends__items__title}>
+               Trends for you
+            </h2>
+            {trendsForYou.map((item) => {
+               return (
+                  <TrendItem
+                     placeOfTrend={item.placeOfTrend}
+                     title={item.title}
+                     quantityPosts={item.quantityPosts}
+                  />
+               );
+            })}
          </div>
       </div>
    );

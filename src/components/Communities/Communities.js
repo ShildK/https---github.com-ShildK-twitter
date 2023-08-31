@@ -6,7 +6,8 @@ export default function Communities() {
         <div className={styles.communities}>
             <Header title="Communities"/>
             <div className={styles.communities__body}>
-                <h2 className={styles.communities__body__title}>Discover new Communities </h2>
+                <h2 className={styles.communities__body__title}>You haven’t joined any Communities yet</h2>
+                <p className={styles.communities__body__subtitle}>When you do, you’ll see their posts here.</p>
             </div>
         </div>
     )

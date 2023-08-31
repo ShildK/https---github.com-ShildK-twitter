@@ -27,10 +27,11 @@ function App() {
    const router = createBrowserRouter(
       createRoutesFromElements(
          <Route path="/" element={<RootLayout />}>
+            <Route index element={<Profile />} />
             <Route path="profile" element={<Profile />} />
             <Route path="home" element={<Home />} />
             <Route path="explore" element={<Explore />} />
-            <Route path="notifications" element={<Notifications />} />
+            <Route path="notifications/*" element={<Notifications />} />
             <Route path="messages" element={<Messages />} />
             <Route path="lists" element={<Lists />} />
             <Route path="bookmarks" element={<Bookmarks />} />
