@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useUsers } from "../store/useUsers";
+import { useUsers } from "../../store/useUsers";
 import styles from "./Navbar.module.css";
 import NavbarList from "./NavbarList/NavbarList";
 

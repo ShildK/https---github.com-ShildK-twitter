@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import uuid from 'react-uuid';
 
 export const usePosts = create((set) => ({
   posts: [],
@@ -7,7 +8,7 @@ export const usePosts = create((set) => ({
       posts: [
         ...state.posts,
         {
-          postId: new Date().getTime(),
+          postId: uuid(),
           creatorId: creatorId,
           postText: postText,
           authorName: authorName,

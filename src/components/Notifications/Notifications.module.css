@@ -1,14 +1,13 @@
 .notifications {
    width: 50%;
-
-   /* display: flex;
-   flex-direction: column; */
 }
+
 .notifications__content {
    display: flex;
    justify-content: space-between;
    border-bottom: 1px solid rgb(240, 240, 240);
 }
+
 .notifications__content__link {
    width: 100%;
    text-align: center;

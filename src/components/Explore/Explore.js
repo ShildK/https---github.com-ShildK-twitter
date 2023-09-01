@@ -1,4 +1,4 @@
-import { trendsForYou } from "../../dataBase";
+import { trendsForYou } from "../../config";
 import TrendItem from "../TrendsColumn/TrendItem/TrendItem";
 import styles from "./Explore.module.css";
 

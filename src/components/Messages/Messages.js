@@ -1,18 +1,24 @@
+import { titlesDatas } from "../../config";
 import Header from "../Header/Header";
+import TitleBlock from "../TitleBlock/TitleBlock";
 import styles from "./Messages.module.css";
 
 export default function Messages() {
+   const componentName = "Messages";
    return (
-      <div className={styles.messages}>
-         <Header title="Messages" />
-         <div className={styles.messages__body}>
-            <h2 className={styles.messages__body__title}>Welcome to your inbox!</h2>
-            <p className={styles.messages__body__subtitle}>
-               Drop a line, share posts and more with private conversations
-               between you and others on Twitter.
-            </p>
-            <button className={styles.messages__body__button}>Write a message</button>
-         </div>
+      <div style={{ width: "50%" }}>
+         <Header title={componentName} />
+         {titlesDatas.map((titleData) => {
+            if (titleData.componentName === componentName) {
+               return (
+                  <TitleBlock
+                     title={titleData.title}
+                     subtitle={titleData.subtitle}
+                  />
+               );
+            }
+         })}
+         <button className={styles.messages__button}>Write a message</button>
       </div>
    );
 }

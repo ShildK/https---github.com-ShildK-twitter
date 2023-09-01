@@ -22,6 +22,10 @@
 
    text-align: center;
 }
+.navbar__button__post:hover {
+   background-color: #1c8ad4;
+   transition: 0.2s;
+}
 .navbar__link__post {
    width: 100%;
    padding: 15px 0;

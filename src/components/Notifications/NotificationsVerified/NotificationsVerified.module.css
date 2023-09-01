@@ -1,17 +1,4 @@
-.notifications__verified{
-    width: 50%;
-    margin: 50px auto;
-
-}
 .notifications__verified__img{
     width: 100%;
     margin-bottom: 30px;
-}
-.notifications__verified__title{
-    font-size: 32px;
-}
-.notifications__verified__subtitle{
-    margin-top: 20px;
-    font-size: 15px;
-    color: #536471;
 }

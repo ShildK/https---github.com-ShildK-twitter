@@ -1,5 +1,5 @@
-import { usePosts } from "../store/usePosts";
-import { useUsers } from "../store/useUsers";
+import { usePosts } from "../../store/usePosts";
+import { useUsers } from "../../store/useUsers";
 import styles from "./Profile.module.css";
 
 import { LiaCalendar } from "react-icons/lia";

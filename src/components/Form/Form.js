@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Form.module.css";
-import { usePosts } from "../store/usePosts";
-import { useUsers } from "../store/useUsers";
+import { useUsers } from "../../store/useUsers";
+import { usePosts } from "../../store/usePosts"
 
 export default function Form() {
    const [postText, setPostText] = useState("");
@@ -13,10 +13,6 @@ export default function Form() {
       push(2, postText, users[0].name);
       setPostText("");
    };
-
-   useEffect(() => {
-      console.log(posts);
-   }, posts);
 
    return (
       <div className={styles.form}>

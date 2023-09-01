@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Container from "../Container/Container";
-import { useUsers } from "../store/useUsers";
+import { useUsers } from "../../store/useUsers";
 import styles from "./Registration.module.css";
 
 export default function Registration() {

@@ -3,12 +3,10 @@ import Header from "../Header/Header";
 import styles from "./Notifications.module.css";
 import NotificationsAll from "./NotificationsAll/NotificationsAll";
 import NotificationsVerified from "./NotificationsVerified/NotificationsVerified";
+import NotificationsMentions from "./NotificationsMentions/NotificationsMentions";
 
 
 export default function Notifications() {
-    const mainSubtitle = 'From likes to reposts and a whole lot more, this is where all the action happens.'
-    const verifiedSubtitle = 'When someone mentions you, you’ll find it here.'
-
    return (
       <div className={styles.notifications}>
          <Header title="Notifications" />
@@ -24,9 +22,9 @@ export default function Notifications() {
             </Link>
          </div>
          <Routes>
-            <Route path="/" element={<NotificationsAll subtitle={mainSubtitle}/>} />
+            <Route path="/" element={<NotificationsAll />} />
             <Route path="verified" element={<NotificationsVerified/>} />
-            <Route path="mentions" element={<NotificationsAll subtitle={verifiedSubtitle}/>} />
+            <Route path="mentions" element={<NotificationsMentions />} />
          </Routes>
       </div>
    );

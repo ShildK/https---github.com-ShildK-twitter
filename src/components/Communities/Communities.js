@@ -1,14 +1,22 @@
-import Header from "../Header/Header"
-import styles from "./Communities.module.css"
+import { titlesDatas } from "../../config";
+import Header from "../Header/Header";
+import TitleBlock from "../TitleBlock/TitleBlock";
 
 export default function Communities() {
-    return(
-        <div className={styles.communities}>
-            <Header title="Communities"/>
-            <div className={styles.communities__body}>
-                <h2 className={styles.communities__body__title}>You haven’t joined any Communities yet</h2>
-                <p className={styles.communities__body__subtitle}>When you do, you’ll see their posts here.</p>
-            </div>
-        </div>
-    )
+   const componentName = "Communities";
+   return (
+      <div style={{ width: "50%" }}>
+         <Header title={componentName} />
+         {titlesDatas.map((titleData) => {
+            if (titleData.componentName === componentName) {
+               return (
+                  <TitleBlock
+                     title={titleData.title}
+                     subtitle={titleData.subtitle}
+                  />
+               );
+            }
+         })}
+      </div>
+   );
 }

@@ -1,9 +1,8 @@
 import styles from "./TrendsColumn.module.css"
 
-
 import { FiSearch } from "react-icons/fi";
 
-import { trends } from "../../dataBase"
+import { trends } from "../../config"
 import TrendItem from "./TrendItem/TrendItem"
 
 export default function TrendsColumn () {

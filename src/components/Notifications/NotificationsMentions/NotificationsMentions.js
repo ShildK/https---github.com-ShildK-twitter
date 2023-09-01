@@ -1,12 +1,10 @@
-import { titlesDatas } from "../../config";
-import TitleBlock from "../TitleBlock/TitleBlock";
-import ListsHeader from "./ListsHeader/ListsHeader";
+import { titlesDatas } from "../../../config";
+import TitleBlock from "../../TitleBlock/TitleBlock";
 
-export default function Lists() {
-   const componentName = "Lists";
+export default function NotificationsVerified() {
+   const componentName = "NotificationsMentions";
    return (
-      <div style={{ width: "50%" }}>
-         <ListsHeader />
+      <div style={{ width: "70%", margin: "50px auto" }}>
          {titlesDatas.map((titleData) => {
             if (titleData.componentName === componentName) {
                return (

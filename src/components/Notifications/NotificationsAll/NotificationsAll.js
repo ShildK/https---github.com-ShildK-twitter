@@ -1,10 +1,20 @@
-import styles from "./NotificationsAll.module.css"
+import { titlesDatas } from "../../../config";
+import TitleBlock from "../../TitleBlock/TitleBlock";
 
-export default function NotificationsAll({ subtitle }) {
+export default function NotificationsAll() {
+    const componentName = "NotificationsAll";
     return(
-        <div className={styles.notifications__all}>
-            <h2 className={styles.notifications__all__title}>Nothing to see here — yet</h2>
-            <p className={styles.notifications__all__subtitle}>{ subtitle }</p>
+        <div style={{ width: "70%", margin: "50px auto"}}>
+            {titlesDatas.map((titleData) => {
+                if (titleData.componentName === componentName) {
+                    return (
+                        <TitleBlock
+                            title={titleData.title}
+                            subtitle={titleData.subtitle}
+                        />
+                    );
+                }
+            })}
         </div>
     )
 }

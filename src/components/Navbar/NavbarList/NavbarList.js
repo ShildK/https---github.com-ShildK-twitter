@@ -23,7 +23,7 @@ export default function NavbarList() {
     <div className={styles.navbar__items}>
         {navbarListElements.map((listElement) => {
             return(
-                <div className={styles.navbar__items__element}>
+                <div key={listElement.title} className={styles.navbar__items__element}>
                     <div className={styles.element__icon}>{listElement.icon}</div>
                     <Link to={`/${listElement.title.toLowerCase()}`} className={styles.element__link}>{listElement.title}</Link>
                 </div>

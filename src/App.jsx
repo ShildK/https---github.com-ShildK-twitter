@@ -7,7 +7,7 @@ import {
    createBrowserRouter,
 } from "react-router-dom";
 
-import { useUsers } from "./components/store/useUsers";
+import { useUsers } from "./store/useUsers";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import TrendsColumn from "./components/TrendsColumn/TrendsColumn";

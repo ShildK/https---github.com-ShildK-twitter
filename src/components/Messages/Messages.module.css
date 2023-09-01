@@ -1,17 +1,6 @@
-.messages {
-   width: 50%;
-}
-.messages__body {
-   margin: 30px;
-}
-.messages__body__subtitle {
-   margin-top: 10px;
-   font-size: 15px;
-   color: #536471;
-}
-.messages__body__button {
+.messages__button {
    width: 30%;
-   margin-top: 50px;
+   margin: 50px;
    padding: 12px;
 
    border-radius: 25px;

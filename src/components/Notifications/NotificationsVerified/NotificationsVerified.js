@@ -1,11 +1,25 @@
+import { titlesDatas } from "../../../config";
+import TitleBlock from "../../TitleBlock/TitleBlock";
 import styles from "./NotificationsVerified.module.css"
 
 export default function NotificationsVerified() {
-    return(
-        <div className={styles.notifications__verified}>
-            <img src="../img/verified.png" className={styles.notifications__verified__img}></img>
-            <h2 className={styles.notifications__verified__title}>Nothing to see here — yet</h2>
-            <p className={styles.notifications__verified__subtitle}>Likes, mentions, reposts, and a whole lot more — when it comes from a verified account, you’ll find it here.</p>
+    const componentName = "NotificationsVerified";
+    return (
+        <div style={{ width: "70%", margin: "50px auto"}}>
+            <img
+               src="../img/verified.png"
+               className={styles.notifications__verified__img}
+            />
+            {titlesDatas.map((titleData) => {
+                if (titleData.componentName === componentName) {
+                    return (
+                        <TitleBlock
+                            title={titleData.title}
+                            subtitle={titleData.subtitle}
+                        />
+                    );
+                }
+            })}
         </div>
-    )
+    );
 }

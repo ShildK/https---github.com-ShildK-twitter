@@ -44,7 +44,7 @@
    font-size: 18px;
    font-weight: 600;
 }
-.registration__button:hover {
+.registration__button__active:hover {
    background-color: #1c8ad4;
    transition: 0.2s;
 }
@@ -54,7 +54,7 @@
    margin-top: 40px;
 
    border-radius: 30px;
-   background-color: #53b5f6;
+   background-color: #82caf9;
    border: none;
 
    color: #fff;
